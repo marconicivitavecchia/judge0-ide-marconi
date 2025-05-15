@@ -1,0 +1,14 @@
+# File di configurazione sensibili
+.htaccess
+config.php
+*.conf
+
+# File temporanei
+*.tmp
+*.log
+cache/
+tmp/
+
+# File di sistema
+.DS_Store
+Thumbs.db
