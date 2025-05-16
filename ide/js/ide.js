@@ -752,12 +752,19 @@ document.addEventListener("DOMContentLoaded", async function () {
 });
 
 const DEFAULT_SOURCE = "\
-n = int(input())\n\
-print(n*2)\n\
+# Benvenuti al Marconi\n\
+# Scegli il tuo linguaggio in alto e modifica questo codice\n\
+# - gli input verranno presi dalla scheda 'Input'\n\
+# - le stampe andranno nella scheda 'Output'\n\
+while (n := int(input())) != 0:\n\
+    print(n*2)\n\
 ";
 
 const DEFAULT_STDIN = "\
 3\n\
+10\n\
+-4\n\
+0\n\
 ";
 
 const DEFAULT_COMPILER_OPTIONS = "";
