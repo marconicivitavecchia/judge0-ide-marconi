@@ -4,7 +4,6 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<script src="./assets/resource_14a55d1e.js"></script>
 <script crossorigin="anonymous" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" referrerpolicy="no-referrer" src="./assets/jquery.min.js"></script>
 <script crossorigin="anonymous" integrity="sha512-rvRITpPeEKe4hV9M8XntuXX6nuohzqdR5O3W6nhjTLwkrx0ZgBQuaK4fv5DdOWzs2IaXsGt5h0+nyp9pEuoTXg==" referrerpolicy="no-referrer" src="./assets/marked.min.js"></script>
 <script crossorigin="anonymous" integrity="sha512-LQNxIMR5rXv7o+b1l8+N1EZMfhG7iFZ9HhnbJkTp4zjNr5Wvst75AqUeFDxeRUa7l5vEDyUiAip//r+EFLLCyA==" referrerpolicy="no-referrer" src="./assets/katex.min.js"></script>
@@ -25,9 +24,7 @@
 <script src="./vendor/monaco-editor-0.44.0/min/vs/loader.js"></script>
 <script src="./vendor/monaco-editor-0.44.0/min/vs/editor/editor.main.nls.js"></script>
 <script src="./vendor/monaco-editor-0.44.0/min/vs/editor/editor.main.js"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="./assets/css2.css" rel="stylesheet"/>
+<link href="./assets/css2-local.css" rel="stylesheet"/>
 <link crossorigin="anonymous" href="./assets/semantic.min.css" integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" referrerpolicy="no-referrer" rel="stylesheet"/>
 <script crossorigin="anonymous" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" referrerpolicy="no-referrer" src="./assets/semantic.min.js"></script>
 <script src="js/ai.js" type="module"></script>
@@ -35,6 +32,7 @@
 <script src="js/electron.js" type="module"></script>
 <script src="js/ide.js" type="module"></script>
 <script src="js/local_storage.js" type="module"></script>
+<script src="js/puter-stub.js" type="module"></script>
 <script src="js/puter.js" type="module"></script>
 <script src="js/query.js" type="module"></script>
 <script src="js/style.js" type="module"></script>
@@ -58,7 +56,7 @@
 <meta content="Free and open-source online code editor and compiler" property="og:description"/>
 <meta content="Judge0 IDE" property="og:site_name"/>
 <meta content="it_IT" property="og:locale"/>
-<meta content="https://ide.judge0.com" property="twitter:url"/>
+<meta content="https://code.marconicloud.it" property="twitter:url"/>
 <meta content="summary_large_image" property="twitter:card"/>
 <meta content="Judge0 IDE" property="twitter:title"/>
 <meta content="./assets/wallpaper.png" property="twitter:image"/>
@@ -158,6 +156,7 @@
             </div>
 </div>
 </div>
+<!-- Chat container disabled for local hosting
 <div class="ui segment" id="judge0-chat-container">
 <div class="ui top attached borderless menu">
 <div class="item">
@@ -198,6 +197,7 @@
 </form>
 </div>
 </div>
+-->
 <div class="ui bottom right attached mini label judge0-showStatusLine" id="judge0-status-line"></div>
 <a class="ui bottom center attached mini label judge0-showCopyright" href="https://judge0.com" target="_blank">
 © 2016-2025 Judge0 d.o.o. – All Rights Reserved. • A Croatian 🇭🇷 company

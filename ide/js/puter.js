@@ -1,9 +1,9 @@
 "use strict";
 
-export const IS_PUTER = puter.env === "app";
+export const IS_PUTER = false;  // Disabled for local hosting
 
 export function usePuter() {
-    return IS_PUTER || puter.auth.isSignedIn();
+    return false;  // Puter integration is disabled
 }
 
 async function uiSignIn() {
