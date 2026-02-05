@@ -10,15 +10,17 @@ const AUTH_HEADERS = API_KEY ? {
 const CE = "CE";
 const EXTRA_CE = "EXTRA_CE";
 
-const AUTHENTICATED_CE_BASE_URL = "https://code.marconicloud.it:2358";
-const AUTHENTICATED_EXTRA_CE_BASE_URL = "https://code.marconicloud.it:2358";
+// Use relative path for API (requires reverse proxy to /api -> localhost:2358)
+// Or use direct URL if CORS is properly configured
+const AUTHENTICATED_CE_BASE_URL = "/api";
+const AUTHENTICATED_EXTRA_CE_BASE_URL = "/api";
 
 var AUTHENTICATED_BASE_URL = {};
 AUTHENTICATED_BASE_URL[CE] = AUTHENTICATED_CE_BASE_URL;
 AUTHENTICATED_BASE_URL[EXTRA_CE] = AUTHENTICATED_EXTRA_CE_BASE_URL;
 
-const UNAUTHENTICATED_CE_BASE_URL = "https://code.marconicloud.it:2358";
-const UNAUTHENTICATED_EXTRA_CE_BASE_URL = "https://code.marconicloud.it:2358";
+const UNAUTHENTICATED_CE_BASE_URL = "/api";
+const UNAUTHENTICATED_EXTRA_CE_BASE_URL = "/api";
 
 var UNAUTHENTICATED_BASE_URL = {};
 UNAUTHENTICATED_BASE_URL[CE] = UNAUTHENTICATED_CE_BASE_URL;
